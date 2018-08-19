@@ -1,0 +1,33 @@
+.container {
+  max-width: 1000px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  .hook-container();
+}
+
+.container .container {
+  padding-left: 0;
+  padding-right: 0
+}
+
+.container-expand {
+  max-width: none
+}
+
+.hook-container-misc();
+
+//=========== Hooks
+
+.hook-container() {
+  &-mobile {
+    padding-left: 15px;
+    padding-right: 15px;
+    @media screen and (min-width: 1024px) {
+      padding-left: 60px;
+      padding-right: 60px;
+    } 
+  }
+}
+.hook-container-misc() {}

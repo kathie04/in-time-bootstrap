@@ -1,0 +1,41 @@
+
+.nav-tabs {
+    margin: 0;
+    padding-left: 0;
+    border-bottom: none;
+
+    & > li:not(:last-child) {
+        margin-right: 6px;
+      }
+
+     
+    & > li > a {
+        padding: 12px 16px;
+        background-color: #e9e9e9;
+        color: #000;
+        text-decoration: none;
+        border-radius: 4px 4px 0 0; 
+        &:hover,
+        &:focus {
+            text-decoration: none;
+            background-color: @global-primary-background;
+            color: #fff;
+        }
+    }
+    .nav-link.active, .nav-item.show .nav-link {
+        text-decoration: none;
+        background-color: @global-primary-background;
+        color: #fff;
+    }
+  }
+
+  .tab-content {
+      border-top: 1px solid @global-primary-background;
+      margin-top: 1px;
+      padding-top: 10px;
+  }
+  
+ 
+  .tabs-content {
+    padding: 14px 0;
+  }
